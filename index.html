@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/logo-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <title>Home | Space tourism website</title>
+  </head>
+  <body class="home bg-dark text-white ff-barlow grid fs-400">
+    <header class="flex">
+      <div>
+        <img
+          class="logo"
+          src="assets/shared/logo.svg"
+          alt="space tourism logo"
+        />
+      </div>
+      <button class="mobile-nav-button" aria-controls="navigation-bar"><span class="sr-only">Menu</span></button>
+      <nav>
+        <ul id="navigation-bar" class="navigation-bar flex nav-underline fs-300">
+          <li class="active">
+            <a href="index.html" class="uppercase text-white ff-barlow-c ls-2"
+              ><span>00</span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="destination-pages/destination-moon.html"
+              class="uppercase text-white ff-barlow-c ls-2"
+              ><span>01</span>Destination</a
+            >
+          </li>
+          <li>
+            <a
+              href="crew-pages/crew-commander.html"
+              class="uppercase text-white ff-barlow-c ls-2"
+              ><span>02</span>Crew</a
+            >
+          </li>
+          <li>
+            <a
+              href="technology-pages/technology-vehicle.html"
+              class="uppercase text-white ff-barlow-c ls-2"
+              ><span>03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="grid-container g-center">
+      <div>
+        <h1 class="text-light ls-3 uppercase fs-500 ff-barlow-c">
+          So, you want to travel to
+          <span class="fs-900 uppercase ff-bellefair text-white block"
+            >space</span
+          >
+        </h1>
+        <p class="text-light">
+          Let's face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we'll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <a
+        href="#"
+        class="round-button uppercase text-dark bg-white fs-600 ff-bellefair"
+      >
+        Explore
+      </a>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
