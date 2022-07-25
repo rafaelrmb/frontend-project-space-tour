@@ -242,6 +242,21 @@ body {
   background-position: center bottom;
 }
 
+.skip-to-content {
+  position: absolute;
+  transform: translateY(-100%);
+  background-color: hsl(var(--light-blue));
+  border-radius: 2%;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  transition: transform .5s ease-in-out;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0 );
+}
+
 header {
   align-items: center;
   justify-content: space-between;
