@@ -255,6 +255,7 @@ select {
 
 .tab-nav > * {
   border: none;
+  background: none;
   cursor: pointer;
 }
 
@@ -387,6 +388,10 @@ header {
 }
 
 /*------------------- DESTINATION LAYOUT ---------------------------------------*/
+.destination {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+}
+
 .destination .grid-container {
   grid-template-areas:
     "title"
@@ -420,6 +425,10 @@ header {
 }
 
 /*------------------- CREW LAYOUT ---------------------------------------*/
+.crew {
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
+}
+
 .crew .grid-container {
   grid-template-areas:
     "title"
@@ -528,6 +537,11 @@ header {
   }
 
   /* DESTINATION */
+  .destination {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+    background-position: center center;
+  }
+
   .destination .numbered-title {
     justify-self: start;
     margin: 2.4375rem;
@@ -539,6 +553,11 @@ header {
   }
 
   /* CREW */
+  .crew {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+    background-position: center center;
+  }
+
   .crew .grid-container {
     grid-template-areas:
       "title"
@@ -635,6 +654,10 @@ header {
   }
 
   /* DESTINATION */
+  .destination {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+  }
+
   .destination .grid-container {
     grid-template-areas:
       ". title title ."
@@ -654,6 +677,11 @@ header {
   }
 
   /* CREW */
+  .crew {
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    background-position: center center;
+  }
+
   .crew .grid-container {
     grid-template-areas:
       ". title image ."
