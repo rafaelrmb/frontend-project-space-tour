@@ -259,8 +259,9 @@ select {
   cursor: pointer;
 }
 
-.tab-nav .active {
+.tab-nav > [aria-selected="true"] {
   color: hsl(var(--white));
+  border-color: hsl(var(--white) / 1);
 }
 
 .dot-nav > * {
