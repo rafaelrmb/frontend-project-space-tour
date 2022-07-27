@@ -36,7 +36,7 @@
           id="navigation-bar"
           class="navigation-bar flex nav-underline fs-300"
         >
-          <li class="active">
+          <li>
             <a href="index.html" class="uppercase text-white ff-barlow-c ls-2"
               ><span aria-hidden="true">00</span>Home</a
             >
@@ -48,7 +48,7 @@
               ><span aria-hidden="true">01</span>Destination</a
             >
           </li>
-          <li>
+          <li class="active">
             <a href="#" class="uppercase text-white ff-barlow-c ls-2"
               ><span aria-hidden="true">02</span>Crew</a
             >
@@ -67,17 +67,41 @@
         src="assets/crew/image-douglas-hurley.png"
         alt="Douglas Hurley in a blue NASA jumpsuit"
       />
-      <div class="dot-nav flex">
-        <button aria-selected="true">
+      <div class="dot-nav flex" role="tablist" aria-label="crew member list">
+        <button
+          aria-selected="true"
+          role="tab"
+          tabindex="0"
+          aria-controls="commander-tab"
+          data-image="commander-image"
+        >
           <span class="sr-only">Commander</span>
         </button>
-        <button aria-selected="false">
+        <button
+          aria-selected="false"
+          role="tab"
+          tabindex="-1"
+          aria-controls="specialist-tab"
+          data-image="specialist-image"
+        >
           <span class="sr-only">Mission Specialist</span>
         </button>
-        <button aria-selected="false">
+        <button
+          aria-selected="false"
+          role="tab"
+          tabindex="-1"
+          aria-controls="pilot-tab"
+          data-image="pilot-image"
+        >
           <span class="sr-only">Pilot</span>
         </button>
-        <button aria-selected="false">
+        <button
+          aria-selected="false"
+          role="tab"
+          tabindex="-1"
+          aria-controls="engineer-tab"
+          data-image="engineer-image"
+        >
           <span class="sr-only">Engineer</span>
         </button>
       </div>
