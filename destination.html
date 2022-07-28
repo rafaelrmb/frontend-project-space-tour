@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <title>Destination | Space Tourism</title>
   </head>
-  <body class="destination bg-dark text-white ff-barlow grid fs-400">
+  <body id="destination" class="destination bg-dark text-white ff-barlow grid fs-400">
     <a class="skip-to-content uppercase" href="#main">Skip to content</a>
     <header class="flex">
       <div>
@@ -65,7 +65,7 @@
         <span aria-hidden="true">01</span>Pick your destination
       </h1>
       <img
-        id="moon-image"
+        id="destination-image"
         src="assets/destination/image-moon.png"
         alt="the moon"
       />
@@ -80,8 +80,8 @@
           tabindex="0"
           role="tab"
           aria-selected="true"
-          aria-controls="moon-tab"
-          data-image="moon-image"
+          aria-controls="destination-tab"
+          data-position="0"
         >
           Moon
         </button>
@@ -90,8 +90,8 @@
           tabindex="-1"
           role="tab"
           aria-selected="false"
-          aria-controls="mars-tab"
-          data-image="mars-image"
+          aria-controls="destination-tab"
+          data-position="1"
         >
           Mars
         </button>
@@ -100,8 +100,8 @@
           tabindex="-1"
           role="tab"
           aria-selected="false"
-          aria-controls="europa-tab"
-          data-image="europa-image"
+          aria-controls="destination-tab"
+          data-position="2"
         >
           Europa
         </button>
@@ -110,16 +110,16 @@
           tabindex="-1"
           role="tab"
           aria-selected="false"
-          aria-controls="titan-tab"
-          data-image="titan-image"
+          aria-controls="destination-tab"
+          data-position="3"
         >
           Titan
         </button>
       </div>
 
-      <section class="about-destination" id="moon-tab">
-        <h2 class="uppercase fs-800 ff-bellefair">Moon</h2>
-        <p class="text-light">
+      <section class="about-destination" id="destination-tab">
+        <h2 id="destination-name" class="uppercase fs-800 ff-bellefair">Moon</h2>
+        <p id="destination-description" class="text-light">
           See our planet as you've never seen it before. A perfect relaxing trip
           away to help regain perspective and come back refreshed. While you're
           there, take in some history by visiting the Luna 2 and Apollo 11
@@ -130,18 +130,19 @@
             <h3 class="ff-barlow-c uppercase text-light ls-1 fs-200">
               Avg. distance
             </h3>
-            <p class="ff-bellefair uppercase fs-fixed">384,400 km</p>
+            <p id="stats-dist" class="ff-bellefair uppercase fs-fixed">384,400 km</p>
           </div>
           <div>
             <h3 class="ff-barlow-c uppercase text-light ls-1 fs-200">
               Est. travel time
             </h3>
-            <p class="ff-bellefair uppercase fs-fixed">3 days</p>
+            <p id="stats-time" class="ff-bellefair uppercase fs-fixed">3 days</p>
           </div>
         </div>
       </section>
     </main>
 
     <script src="scripts/index.js"></script>
+    <script src="scripts/tabsNavigation.js"></script>
   </body>
 </html>

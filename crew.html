@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <title>Crew | Space Tourism</title>
   </head>
-  <body class="crew bg-dark text-white ff-barlow grid fs-400">
+  <body id="crew" class="crew bg-dark text-white ff-barlow grid fs-400">
     <a class="skip-to-content uppercase" href="#main">Skip to content</a>
     <header class="flex">
       <div>
@@ -64,6 +64,7 @@
     <main id="main" class="grid-container g-center flow">
       <h1 class="numbered-title"><span>02</span>Meet your crew</h1>
       <img
+        id="crew-image"
         src="assets/crew/image-douglas-hurley.png"
         alt="Douglas Hurley in a blue NASA jumpsuit"
       />
@@ -73,7 +74,7 @@
           role="tab"
           tabindex="0"
           aria-controls="commander-tab"
-          data-image="commander-image"
+          data-position="0"
         >
           <span class="sr-only">Commander</span>
         </button>
@@ -82,7 +83,7 @@
           role="tab"
           tabindex="-1"
           aria-controls="specialist-tab"
-          data-image="specialist-image"
+          data-position="1"
         >
           <span class="sr-only">Mission Specialist</span>
         </button>
@@ -91,7 +92,7 @@
           role="tab"
           tabindex="-1"
           aria-controls="pilot-tab"
-          data-image="pilot-image"
+          data-position="2"
         >
           <span class="sr-only">Pilot</span>
         </button>
@@ -100,15 +101,15 @@
           role="tab"
           tabindex="-1"
           aria-controls="engineer-tab"
-          data-image="engineer-image"
+          data-position="3"
         >
           <span class="sr-only">Engineer</span>
         </button>
       </div>
       <div class="about-crew flow">
-        <h2 class="ff-bellefair uppercase fs-600">Commander</h2>
-        <span class="ff-bellefair uppercase fs-700">Douglas Hurley</span>
-        <p class="text-light fs-400">
+        <h2 id="crew-role" class="ff-bellefair uppercase fs-600">Commander</h2>
+        <span id="crew-name" class="ff-bellefair uppercase fs-700">Douglas Hurley</span>
+        <p id="crew-bio" class="text-light fs-400">
           Douglas Gerald Hurley is an American engineer, former Marine Corps
           pilot and former NASA astronaut. He launched into space for the third
           time as commander of Crew Dragon Demo-2.
@@ -116,5 +117,6 @@
       </div>
     </main>
     <script src="scripts/index.js"></script>
+    <script src="scripts/tabsNavigation.js"></script>
   </body>
 </html>
