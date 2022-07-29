@@ -358,7 +358,8 @@ header {
 }
 
 .tab-nav > * {
-  border: none;
+  border-inline: 0;
+  border-top: 0;
   background: none;
   cursor: pointer;
 }
