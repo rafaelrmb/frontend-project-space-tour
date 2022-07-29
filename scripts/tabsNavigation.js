@@ -5,7 +5,7 @@ const currentPage = document.querySelector('body').id;
 tabList.addEventListener('keydown', changeTabFocus);
 
 tabs.forEach((tab) => {
-    tab.addEventListener('click', changeTabPanel);
+    tab.addEventListener('click', changeTabPanel);    
 });
 
 
@@ -67,7 +67,13 @@ function showContent(tabPosition, page) {
                 document.querySelector('#crew-name').innerHTML = data.crew[tabPosition].name;
                 document.querySelector('#crew-bio').innerHTML = data.crew[tabPosition].bio;
                 document.querySelector('#crew-image').setAttribute('src', data.crew[tabPosition].images.png);
+            }
 
+            if(page === 'technology') {
+                document.querySelector('#tech-name').innerHTML = data.technology[tabPosition].name;
+                document.querySelector('#tech-description').innerHTML = data.technology[tabPosition].description;
+                document.querySelector('#tech-image-portrait').setAttribute('src', data.technology[tabPosition].images.portrait);
+                document.querySelector('#tech-image-landscape').setAttribute('src', data.technology[tabPosition].images.landscape);
             }
         });
 }
