@@ -5,7 +5,7 @@ const currentPage = document.querySelector('body').id;
 tabList.addEventListener('keydown', changeTabFocus);
 
 tabs.forEach((tab) => {
-    tab.addEventListener('click', changeTabPanel);    
+    tab.addEventListener('click', changeTabPanel);
 });
 
 
@@ -49,7 +49,7 @@ function changeTabPanel(e) {
 }
 
 function showContent(tabPosition, page) {
-    fetch('../data.json')
+    fetch('data.json')
         .then(function (response) {
             return response.json();
         })
@@ -69,7 +69,7 @@ function showContent(tabPosition, page) {
                 document.querySelector('#crew-image').setAttribute('src', data.crew[tabPosition].images.png);
             }
 
-            if(page === 'technology') {
+            if (page === 'technology') {
                 document.querySelector('#tech-name').innerHTML = data.technology[tabPosition].name;
                 document.querySelector('#tech-description').innerHTML = data.technology[tabPosition].description;
                 document.querySelector('#tech-image-portrait').setAttribute('src', data.technology[tabPosition].images.portrait);
