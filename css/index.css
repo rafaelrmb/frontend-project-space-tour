@@ -502,12 +502,12 @@ header {
   margin: 2.4375rem;
 }
 
-.technology img {
+.technology .grid-container img{
   max-width: 100%;
   grid-area: image;
 }
 
-.technology img.portrait {
+.technology #tech-image-portrait {
   display: none;
 }
 
@@ -779,18 +779,21 @@ header {
     background-image: url(../assets/technology/background-technology-desktop.jpg);
   }
 
-  .technology img.portrait {
+  .technology #tech-image-portrait {
     display: initial;
     grid-area: image;
     justify-self: end;
   }
 
-  .technology img.landscape {
+  .technology #tech-image-landscape {
     display: none;
   }
 
   .technology .grid-container {
-    grid-template-columns: minmax(6rem, 1fr) minmax(8rem, 10rem) repeat(2, minmax(0, 60rem));
+    grid-template-columns: minmax(6rem, 1fr) minmax(8rem, 10rem) repeat(
+        2,
+        minmax(0, 60rem)
+      );
   }
 
   .technology .grid-container {
