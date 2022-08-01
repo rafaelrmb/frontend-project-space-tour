@@ -24,12 +24,16 @@ Some of the goals of this challenge were:
 
 ##### MOBILE
 
-<img src="./previews/mobileLayout.png" alt="space tourism website mobile layout"> 
-<img src="./previews/mobileMenuActive.png" alt="space tourism website mobile menu opened">
+<p align="center">
+    <img src="./previews/mobileLayout.png" alt="space tourism website mobile layout" style="max-width: 45%; margin-right: 4rem;">
+    <img src="./previews/mobileMenuActive.png" alt="space tourism website mobile menu opened" style="max-width: 45%">
+</p>
 
 ##### TABLET
 
-<img src="./previews/tabletLayout.png" alt="space tourism website tablet layout">
+<p align="center">
+    <img src="./previews/tabletLayout.png" alt="space tourism website tablet layout" style="max-width: 70%" >
+</p>
 
 ##### DESKTOP
 
@@ -37,7 +41,7 @@ Some of the goals of this challenge were:
 
 ### Links
 
-[Live Preview](href="https://rafaelrmb.github.io/frontend-project-space-tour/)
+[Live Preview]("https://rafaelrmb.github.io/frontend-project-space-tour/)
 
 ## My process
 
@@ -68,7 +72,6 @@ During the completion of this challenge, some of the skills I was able to obtain
 - [Fetch and Display JSON Data in HTML](https://howtocreateapps.com/fetch-and-display-json-html-javascript/)
 - [ARIA attributes mdn web docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 - [tabindex attribute mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
-
 
 ## Author
 
