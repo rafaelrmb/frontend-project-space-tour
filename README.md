@@ -36,7 +36,7 @@ Some of the goals of this challenge were:
 
 ### Links
 
-[Live Preview]("https://rafaelrmb.github.io/frontend-project-space-tour/)
+[Live Preview](https://rafaelrmb.github.io/frontend-project-space-tour/)
 
 ## My process
 
