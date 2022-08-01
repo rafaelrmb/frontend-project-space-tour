@@ -24,16 +24,11 @@ Some of the goals of this challenge were:
 
 ##### MOBILE
 
-<p align="center">
-    <img src="./previews/mobileLayout.png" alt="space tourism website mobile layout" style="max-width: 45%; margin-right: 4rem;">
-    <img src="./previews/mobileMenuActive.png" alt="space tourism website mobile menu opened" style="max-width: 45%">
-</p>
+<img src="./previews/mobileLayout.png" alt="space tourism website mobile layout" width="45%" align="left"> <img src="./previews/mobileMenuActive.png" alt="space tourism website mobile menu opened" width="45%" align="right">
 
 ##### TABLET
 
-<p align="center">
-    <img src="./previews/tabletLayout.png" alt="space tourism website tablet layout" style="max-width: 70%" >
-</p>
+<img src="./previews/tabletLayout.png" alt="space tourism website tablet layout" width="70%" align="center">
 
 ##### DESKTOP
 
